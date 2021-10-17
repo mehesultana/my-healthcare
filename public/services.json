@@ -1,0 +1,65 @@
+[
+	{
+		"id": 1,
+		"name": "Heart Care",
+		"price": "300",
+		"description": "My Health Care is where skill and modern technology meet to save and improve lives of both the young and old. From life saving cardiac surgeries to high –tech interventional cardiology –our team of specialist cover the full spectrum of heart diseases with skill and precision.",
+		"img": "https://i.ibb.co/cvrzWqW/Heart.jpg"
+	},
+	{
+		"id": 2,
+		"name": "Skin Aesthetic & Laser",
+		"price": "100",
+		"description": "One stop centre for all types of hair, nail & skin problems ",
+		"img": "https://i.ibb.co/Tvj0nTr/skin-aesthetic-and-laser-centre.jpg"
+	},
+	{
+		"id": 3,
+		"name": "Eye Care",
+		"price": "150",
+		"description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
+		"img": "https://i.ibb.co/q7qgNHS/eye-centre.jpg"
+	},
+	{
+		"id": 4,
+		"name": "Internal Medicine",
+		"price": "180",
+		"description": "Our Internists look at your body in its entirety and are specialists in diagnostics, long-term care, preventative medicine and more. They are often best able to manage the treatment of ongoing illnesses as well as prescribing preventative measures. With this kind of expertise many patients often see an internist as their primary physician.",
+		"img": "https://i.ibb.co/LSkbZR2/internal-medicine-services.jpgco/ZX2Cbkn/4.jpg"
+	},
+	{
+		"id": 5,
+		"name": "Diet & Nutrition",
+		"price": "100",
+		"description": "At My Health Care we have Diet & Nutrition Centre with experienced Dieticians who will provide Diet Chart and Diet counseling according to the physical condition or as per the advice of treating consultant.",
+		"img": "https://i.ibb.co/zN4N2JT/nutrition.jpg"
+	},
+	{
+		"id": 6,
+		"name": "Child Development",
+		"price": "300",
+		"description": "Our motto is to prevent disability, optimize development and improve quality of survival of all children in Bangladesh. To establish child and family-friendly Child Developmental Centre (CDC) we apply strategies and tools standardized for Bangladeshi children for early screening, assessment.",
+		"img": "https://i.ibb.co/hZgcNvS/child-development.jpg"
+	},
+	{
+		"id": 7,
+		"name": "Women Care",
+		"price": "300",
+		"description": "My Health Care takes care of Obstetric and Gynecological patients at the 7th and 8th floor of the main hospital building. The OBGYN consultants provide antenatal care for pregnant ladies",
+		"img": "https://i.ibb.co/4RG2jRv/women.jpg"
+	},
+	{
+		"id": 8,
+		"name": "Physiotherapy & Rehabilitation",
+		"price": "300",
+		"description": "Department of physiotherapy at My Health Care provide services for the patients with various disabilities. Dr.Esakkimuthu asary subbian and Prof. Dr. M A Rashid as consultants supervise the facilities and services in the department .",
+		"img": "https://i.ibb.co/ZdkQkk7/Physiotherapy-Rehabilitation.jpg"
+	},
+	{
+		"id": 9,
+		"name": "Dental Care",
+		"price": "300",
+		"description": "My Health Care Clinic cares for our patients’ dental and oral health.  We offer a wide range of dental services from basic and preventive dental work.",
+		"img": "https://i.ibb.co/ZdkQkk7/Physiotherapy-Rehabilitation.jpg"
+	}
+]
