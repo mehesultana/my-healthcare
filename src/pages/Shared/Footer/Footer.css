@@ -1,0 +1,15 @@
+.footer {
+	margin-top: 100px;
+	background-color: rgb(236, 255, 225);
+	font-size: 20px;
+	height: 200px;
+}
+.detail {
+	color: black;
+}
+.logo {
+	height: 100px;
+}
+p {
+	color: black;
+}
