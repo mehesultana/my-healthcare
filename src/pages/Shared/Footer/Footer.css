@@ -7,9 +7,13 @@
 .detail {
 	color: black;
 }
-.logo {
-	height: 100px;
+.footer-logo {
+	height: 60px;
 }
 p {
+	color: black;
+}
+
+footer a {
 	color: black;
 }

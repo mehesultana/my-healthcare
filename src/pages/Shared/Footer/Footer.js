@@ -1,23 +1,47 @@
 import React from 'react';
 import { Container } from 'react-bootstrap';
 import './Footer.css';
+import { faCartPlus } from '@fortawesome/free-solid-svg-icons';
+
 import logo from '../../../images/logo.png';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
 	return (
 		<Container>
-			<div className="text-white footer">
-				<img className="logo" src={logo} alt="" />
-				<div className="col-lg-6 justify-content-center justify-content-lg-end d-flex">
-					<ul className="detail">
-						<li>About My Health Care</li>
-						<li>Read our blog</li>
-						<li>Get Help</li>
-					</ul>
+			<footer class=" text-center text-dark footer">
+				<img className="footer-logo" src={logo} alt="" />
+				<div class="container p-4 pb-0">
+					<section class="mb-4">
+						<a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
+							<i class="fab fa-facebook-f"></i>
+						</a>
+
+						<Link className="ms-3 cart" to="/cart">
+							Cart <FontAwesomeIcon icon={faCartPlus} />
+						</Link>
+
+						<a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
+							<i class="fab fa-google"></i>
+						</a>
+
+						<a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
+							<i class="fab fa-instagram"></i>
+						</a>
+
+						<a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
+							<i class="fab fa-linkedin-in"></i>
+						</a>
+
+						<a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
+							<i class="fab fa-github"></i>
+						</a>
+					</section>
 				</div>
 
-				<p className="text-center text-white py-3 m-0 detail">© Copyright 2021 || My Health Care All Rights Reserved</p>
-			</div>
+				<div class="text-center p-3">© 2020 Copyright:dghghslkgjsdh</div>
+			</footer>
 		</Container>
 	);
 };
