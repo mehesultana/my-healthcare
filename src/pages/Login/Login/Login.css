@@ -1,0 +1,9 @@
+.background-image {
+	background-image: url('../../../images/banner2.jpg');
+}
+.login-form {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 400px;
+}

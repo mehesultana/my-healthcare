@@ -1,0 +1,11 @@
+.background-image {
+	background-image: url('../../images/resized-image-Promo.jpeg');
+	height: 500px;
+	width: auto;
+}
+.signup-form {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 400px;
+}

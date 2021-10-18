@@ -1,18 +1,18 @@
 .logo {
-	height: 150px;
+	height: 120px;
 }
 .header {
 	text-align: center;
-	background-color: rgb(244, 255, 230);
+	background-color: rgb(202, 235, 233);
 }
 
 .navbar a {
 	text-decoration: none;
 	color: rgb(2, 0, 1);
-	font-size: 25px;
+	font-size: 18px;
 	margin-right: 50px;
 }
 
 .navbar a:hover {
-	background-color: rgb(185, 218, 166);
+	background-color: rgb(168, 224, 222);
 }

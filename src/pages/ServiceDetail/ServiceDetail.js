@@ -11,8 +11,8 @@ const ServiceDetail = () => {
 	};
 	const [service, setService] = useState([]);
 	useEffect(() => {
-		setService(`services.json`[id]);
-		console.log(`services.json`[id]);
+		setService('/services.json'[id]);
+		console.log('/services.json'[id]);
 	}, [id]);
 
 	const { name, price, description, img } = service;
