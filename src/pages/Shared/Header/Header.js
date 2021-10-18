@@ -1,5 +1,3 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCartPlus } from '@fortawesome/free-solid-svg-icons';
 import logo from '../../../images/logo.png';
 import React from 'react';
 import { Button, Container, Nav, Navbar } from 'react-bootstrap';
@@ -20,45 +18,38 @@ const Header = () => {
 
 				<Navbar.Toggle />
 				<Navbar.Collapse className="justify-content-end">
-					<Link className="ms-3 home" to="/home">
+					<Nav.Link className="ms-3 home" as={Link} to="/home">
 						Home
-					</Link>
-					<Link className="ms-3 " to="/service">
+					</Nav.Link>
+					<Nav.Link className="ms-3 " as={Link} to="/service">
 						Services
-					</Link>
-					<Link className="ms-3 " to="/blog">
+					</Nav.Link>
+					<Nav.Link className="ms-3 " as={Link} to="/blog">
 						Blog
-					</Link>
-					<Link className="ms-3 " to="/aboutus">
+					</Nav.Link>
+					<Nav.Link className="ms-3 " as={Link} to="/aboutus">
 						About Us
-					</Link>
+					</Nav.Link>
 					{user?.email && (
 						<Navbar.Text>
 							Signed in as: <a href="#login">{user.displayName}</a>
 						</Navbar.Text>
 					)}
 					{user?.email ? (
-						// <button className="btn-warning" onClick={logOut}>
-						// 	Logout
-						// </button>
 						<Button className="btn btn-warning" onClick={logOut}>
 							Log Out
 							<BsArrowBarRight className="w-6 h-6" />
 						</Button>
 					) : (
 						<div>
-							<Link to="/login">Login</Link>
-							<Link className="ms-3 signUp" to="/signup">
+							<Nav.Link as={Link} to="/login">
+								Login
+							</Nav.Link>
+							<Nav.Link className="ms-3 signUp" as={Link} to="/signup">
 								Sign up
-							</Link>
+							</Nav.Link>
 						</div>
 					)}
-					{/* <Link className="ms-3 " to="/login">
-							login
-						</Link> */}
-					{/* <Link className="ms-3 cart" to="/cart">
-							Cart <FontAwesomeIcon icon={faCartPlus} />
-						</Link> */}
 				</Navbar.Collapse>
 			</Navbar>
 		</Container>

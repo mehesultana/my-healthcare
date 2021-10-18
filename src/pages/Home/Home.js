@@ -5,6 +5,7 @@ import { Container, Row } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import Banner from '../Banner/Banner';
 import Service from '../Service/Service';
+import './Home.css';
 
 const Home = () => {
 	const [services, setServices] = useState([]);
@@ -21,7 +22,7 @@ const Home = () => {
 
 			{/* services  */}
 			<Container>
-				<div className="courses-part">
+				<div className="services-part">
 					<h1>Our Popular services</h1>
 
 					<Row xs={1} md={3} className="g-4 ">

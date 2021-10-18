@@ -5,11 +5,11 @@ import NotFound from './pages/NotFound/NotFound';
 import Services from './pages/Services/Services';
 import ServiceDetail from './pages/ServiceDetail/ServiceDetail';
 import Home from './pages/Home/Home';
-import Blog from './pages/Blog/Blog';
 import Login from './pages/Login/Login/Login';
 import AuthProvider from './contexts/AuthProvider';
 import Signup from './pages/Signup/Signup';
 import Aboutus from './pages/Aboutus/Aboutus';
+import Blogs from './pages/Blogs/Blogs';
 
 function App() {
 	return (
@@ -27,6 +27,9 @@ function App() {
 						<Route path="/aboutus">
 							<Aboutus />
 						</Route>
+						<Route path="/blog">
+							<Blogs />
+						</Route>
 						<Route path="/login">
 							<Login />
 						</Route>
@@ -38,9 +41,6 @@ function App() {
 						</Route>
 						<Route path="/service">
 							<Services />
-						</Route>
-						<Route path="/blog">
-							<Blog />
 						</Route>
 
 						<Route path="*">
