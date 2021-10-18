@@ -24,7 +24,7 @@ const Service = ({ service }) => {
 						<Card.Text>{description}</Card.Text>
 						<Link to={`/servicedetail/${id}`}>
 							<button onClick={handleDetailsClick} className="btn btn-warning">
-								Book {name.toLowerCase()}
+								Book An Appointment
 							</button>
 						</Link>
 					</Card.Body>

@@ -9,6 +9,7 @@ import Blog from './pages/Blog/Blog';
 import Login from './pages/Login/Login/Login';
 import AuthProvider from './contexts/AuthProvider';
 import Signup from './pages/Signup/Signup';
+import Aboutus from './pages/Aboutus/Aboutus';
 
 function App() {
 	return (
@@ -22,6 +23,9 @@ function App() {
 						</Route>
 						<Route path="/Home">
 							<Home />
+						</Route>
+						<Route path="/aboutus">
+							<Aboutus />
 						</Route>
 						<Route path="/login">
 							<Login />
