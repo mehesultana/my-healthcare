@@ -1,9 +1,11 @@
 import logo from '../../../images/logo.png';
 import React from 'react';
 import { Button, Container, Nav, Navbar } from 'react-bootstrap';
+import { HiOutlineBell } from 'react-icons/hi';
 import { Link } from 'react-router-dom';
 import './Header.css';
 import { BsArrowBarRight } from 'react-icons/bs';
+import { ImHome } from 'react-icons/im';
 import useAuth from '../../../hooks/useAuth';
 
 const Header = () => {
@@ -19,9 +21,9 @@ const Header = () => {
 				<Navbar.Toggle />
 				<Navbar.Collapse className="justify-content-end">
 					<Nav.Link className="ms-3 home" as={Link} to="/home">
-						Home
+						<ImHome className="w-8 h-8" />
 					</Nav.Link>
-					<Nav.Link className="ms-3 " as={Link} to="/service">
+					<Nav.Link className="ms-3 " as={Link} to="/services">
 						Services
 					</Nav.Link>
 					<Nav.Link className="ms-3 " as={Link} to="/blog">
@@ -30,6 +32,10 @@ const Header = () => {
 					<Nav.Link className="ms-3 " as={Link} to="/aboutus">
 						About Us
 					</Nav.Link>
+					<Nav.Link className="ms-3 " as={Link} to="/home">
+						<HiOutlineBell className="w-8 h-8" />
+					</Nav.Link>
+
 					{user?.email && (
 						<Navbar.Text>
 							Signed in as: <a href="#login">{user.displayName}</a>
@@ -41,14 +47,14 @@ const Header = () => {
 							<BsArrowBarRight className="w-6 h-6" />
 						</Button>
 					) : (
-						<div>
+						<>
 							<Nav.Link as={Link} to="/login">
 								Login
 							</Nav.Link>
 							<Nav.Link className="ms-3 signUp" as={Link} to="/signup">
 								Sign up
 							</Nav.Link>
-						</div>
+						</>
 					)}
 				</Navbar.Collapse>
 			</Navbar>

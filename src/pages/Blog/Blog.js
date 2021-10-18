@@ -1,5 +1,6 @@
 import React from 'react';
-import { Card, Col, Container } from 'react-bootstrap';
+import { Button, Card, Col, Container } from 'react-bootstrap';
+import { IoIosArrowDropright } from 'react-icons/io';
 import './blog.css';
 
 const Blog = ({ blog }) => {
@@ -15,6 +16,10 @@ const Blog = ({ blog }) => {
 						<Card.Title>{name}</Card.Title>
 						<p>{date}</p>
 						<Card.Text>{description}</Card.Text>
+						<Button className="btn-info">
+							Read More
+							<IoIosArrowDropright className="w-8 h-8" />
+						</Button>
 					</Card.Body>
 				</Card>
 			</Col>

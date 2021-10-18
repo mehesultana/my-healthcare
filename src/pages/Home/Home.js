@@ -23,7 +23,7 @@ const Home = () => {
 			{/* services  */}
 			<Container>
 				<div className="services-part">
-					<h1>Our Popular services</h1>
+					<h1 className="text-center mb-5">Our Popular services</h1>
 
 					<Row xs={1} md={3} className="g-4 ">
 						{services.slice(0, 6).map((service) => (
@@ -32,11 +32,13 @@ const Home = () => {
 					</Row>
 				</div>
 				<br />
-				<Link to="/service">
-					<button type="button" className="btn btn-warning">
-						Explore More <FontAwesomeIcon icon={faArrowAltCircleRight} />
-					</button>
-				</Link>
+				<div className="text-center">
+					<Link to="/services">
+						<button type="button" className="btn btn-info ">
+							Explore More <FontAwesomeIcon icon={faArrowAltCircleRight} />
+						</button>
+					</Link>
+				</div>
 			</Container>
 		</div>
 	);

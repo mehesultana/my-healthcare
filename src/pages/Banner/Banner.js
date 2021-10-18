@@ -6,11 +6,8 @@ const Banner = () => {
 	return (
 		<Container>
 			<div className="banner-image">
-				<h4 className="text-center">Our Commitment to Safe Care</h4>
-				<div className="banner-text">
-					<p>We're here when you need us. For everyday care or life-changing care, you can count on us to keep you and your loved ones safe and healthy.</p>
-				</div>
-
+				<h1 className="text-center">Welcome to My Home Care</h1>
+				<h1 className="text-center">Our Commitment to Safe Care</h1>
 				<CardGroup className="advantage">
 					<Card className="card">
 						<Card.Body>
@@ -36,6 +33,7 @@ const Banner = () => {
 						</Card.Body>
 					</Card>
 				</CardGroup>
+				<div></div>
 			</div>
 		</Container>
 	);

@@ -1,7 +1,8 @@
 .banner-image {
-	background-image: url('../../images/resized-image-Promo\ \(1\).jpeg');
-	height: 400px;
+	background-image: url('../../images/banner5.jpg');
+	height: auto;
 	width: auto;
+	margin-top: 20px;
 }
 
 .banner-text {

@@ -23,7 +23,7 @@ const Service = ({ service }) => {
 						<h2 className="text-center">${price}</h2>
 						<Card.Text>{description}</Card.Text>
 						<Link to={`/servicedetail/${id}`}>
-							<button onClick={handleDetailsClick} className="btn btn-warning">
+							<button onClick={handleDetailsClick} className="btn btn-secondary">
 								Book An Appointment
 							</button>
 						</Link>

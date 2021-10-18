@@ -7,6 +7,7 @@ import ServiceDetail from './pages/ServiceDetail/ServiceDetail';
 import Home from './pages/Home/Home';
 import Login from './pages/Login/Login/Login';
 import AuthProvider from './contexts/AuthProvider';
+import PrivateRoute from '../src/pages/Login/PrivateRoute/PrivateRoute';
 import Signup from './pages/Signup/Signup';
 import Aboutus from './pages/Aboutus/Aboutus';
 import Blogs from './pages/Blogs/Blogs';
@@ -39,9 +40,9 @@ function App() {
 						<Route path="/servicedetail/:serviceId">
 							<ServiceDetail />
 						</Route>
-						<Route path="/service">
+						<PrivateRoute path="/services">
 							<Services />
-						</Route>
+						</PrivateRoute>
 
 						<Route path="*">
 							<NotFound />
