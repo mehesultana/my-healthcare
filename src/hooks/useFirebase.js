@@ -11,6 +11,7 @@ const useFirebase = () => {
 	const [password, setPassword] = useState('');
 	const [error, setError] = useState('');
 	const [isLogin, setIsLogin] = useState(false);
+	const [isLoading, setIsLoading] = useState(true);
 
 	const googleProvider = new GoogleAuthProvider();
 	const facebookProvider = new FacebookAuthProvider();
@@ -19,9 +20,12 @@ const useFirebase = () => {
 	const auth = getAuth();
 
 	const signInUsingGoogle = () => {
-		signInWithPopup(auth, googleProvider).then((result) => {
-			setUser(result.user);
-		});
+		setIsLoading(true);
+		signInWithPopup(auth, googleProvider)
+			.then((result) => {
+				setUser(result.user);
+			})
+			.finally(() => setIsLoading(false));
 	};
 
 	const handleFacebookSignIn = () => {
@@ -113,18 +117,23 @@ const useFirebase = () => {
 		const unsubscribed = onAuthStateChanged(auth, (user) => {
 			if (user) {
 				setUser(user);
-			} else setUser({});
+			} else {
+				setUser({});
+			}
+			setIsLoading(false);
 		});
 
 		return () => unsubscribed;
 	}, []);
 
 	const logOut = () => {
+		setIsLoading(true);
 		signOut(auth)
 			.then(() => {
 				setUser({});
 			})
-			.catch((error) => {});
+
+			.finally(() => setIsLoading(false));
 	};
 
 	return {
@@ -139,6 +148,7 @@ const useFirebase = () => {
 		handleNameChange,
 		handleEmailChange,
 		handlePasswordChange,
+		isLoading,
 	};
 };
 

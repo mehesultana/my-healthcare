@@ -12,7 +12,8 @@ const SingleService = () => {
 		fetch('/serviceDetail.json')
 			.then((res) => res.json())
 			.then((data) => setServiceDetail(data.service));
-	}, []);
+		// .then((data) => console.log(data.service));
+	}, [id]);
 
 	useEffect(() => {
 		const foundService = serviceDetail.find((service) => service.id === id);
@@ -25,7 +26,7 @@ const SingleService = () => {
 			<Row>
 				<Col md={6}>
 					<Card>
-						<Card.Img variant="top" src={singleService?.img} />
+						<Card.Img variant="top" src={serviceDetail?.img} />
 					</Card>
 				</Col>
 				<Col md={6}>
