@@ -1,0 +1,76 @@
+{
+	"service": [
+		{
+			"id": 1,
+			"name": "Heart Care",
+			"price": "300",
+			"description": "My Health Care is where skill and modern technology meet to save and improve lives of both the young and old. From life saving ",
+			"img": "https://i.ibb.co/cvrzWqW/Heart.jpg",
+			"number": "0124723837"
+		},
+		{
+			"id": 2,
+			"name": "Skin Aesthetic & Laser",
+			"price": "100",
+			"description": "One stop centre for all types of hair, nail & skin problems ",
+			"img": "https://i.ibb.co/Tvj0nTr/skin-aesthetic-and-laser-centre.jpg",
+			"number": "0124723837"
+		},
+		{
+			"id": 3,
+			"name": "Eye Care",
+			"price": "150",
+			"description": "Eat a healthy, balanced diet. Your diet should include plenty or fruits and vegetables, especially deep yellow and green leafy ...",
+			"img": "https://i.ibb.co/q7qgNHS/eye-centre.jpg",
+			"number": "0124723837"
+		},
+		{
+			"id": 4,
+			"name": "Internal Medicine",
+			"price": "180",
+			"description": "Our Internists look at your body in its entirety and are specialists in diagnostics, long-term care, preventative medicine and more.",
+			"img": "https://i.ibb.co/LSkbZR2/internal-medicine-services.jpgco/ZX2Cbkn/4.jpg",
+			"number": "0124723837"
+		},
+		{
+			"id": 5,
+			"name": "Diet & Nutrition",
+			"price": "100",
+			"description": "At My Health Care we have Diet & Nutrition Centre with experienced Dieticians who will provide Diet Chart and Diet counseling according ",
+			"img": "https://i.ibb.co/zN4N2JT/nutrition.jpg",
+			"number": "0124723837"
+		},
+		{
+			"id": 6,
+			"name": "Child Development",
+			"price": "300",
+			"description": "Our motto is to prevent disability, optimize development and improve quality of survival of all children in Bangladesh. To establish child ",
+			"img": "https://i.ibb.co/hZgcNvS/child-development.jpg",
+			"number": "0124723837"
+		},
+		{
+			"id": 7,
+			"name": "Women Care",
+			"price": "300",
+			"description": "My Health Care takes care of Obstetric and Gynecological patients at the 7th and 8th floor of the main hospital building. The OBGYN ",
+			"img": "https://i.ibb.co/4RG2jRv/women.jpg",
+			"number": "0124723837"
+		},
+		{
+			"id": 8,
+			"name": "Physiotherapy & Rehabilitation",
+			"price": "300",
+			"description": "Department of physiotherapy at My Health Care provide services for the patients with various disabilities. Dr.Esakkimuthu asary subbian ",
+			"img": "https://i.ibb.co/ZdkQkk7/Physiotherapy-Rehabilitation.jpg",
+			"number": "0124723837"
+		},
+		{
+			"id": 9,
+			"name": "Dental Care",
+			"price": "300",
+			"description": "My Health Care Clinic cares for our patients’ dental and oral health.  We offer a wide range of dental services from basic and preventive ",
+			"img": "https://i.ibb.co/ZdkQkk7/Physiotherapy-Rehabilitation.jpg",
+			"number": "0124723837"
+		}
+	]
+}

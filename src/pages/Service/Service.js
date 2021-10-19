@@ -10,7 +10,7 @@ const Service = ({ service }) => {
 	const history = useHistory();
 
 	const handleDetailsClick = () => {
-		history.push(`/servicedetail/${id}`);
+		history.push(`/singleservice/${id}`);
 	};
 
 	return (
@@ -22,7 +22,7 @@ const Service = ({ service }) => {
 						<Card.Title>{name}</Card.Title>
 						<h2 className="text-center">${price}</h2>
 						<Card.Text>{description}</Card.Text>
-						<Link to={`/servicedetail/${id}`}>
+						<Link to={`/singleservice/${service?.id}`}>
 							<button onClick={handleDetailsClick} className="btn btn-secondary">
 								Book An Appointment
 							</button>
