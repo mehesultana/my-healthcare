@@ -8,11 +8,11 @@ import { Link } from 'react-router-dom';
 const Footer = () => {
 	return (
 		<Container>
-			<footer class=" text-center text-dark footer">
+			<footer className=" text-center text-dark footer">
 				<img className="footer-logo" src={logo} alt="" />
-				<div class="container p-4 pb-0">
+				<div className="container p-4 pb-0">
 					<h6>Get Connected</h6>
-					<section class="mb-4">
+					<section className="mb-4">
 						<Link className="ms-3 cart">
 							<ImFacebook2 />
 						</Link>
@@ -31,7 +31,7 @@ const Footer = () => {
 					</section>
 				</div>
 
-				<div class="text-center p-3">Copyright © 2021 My Health Care</div>
+				<div className="text-center p-3">Copyright © 2021 My Health Care</div>
 			</footer>
 		</Container>
 	);

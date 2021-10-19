@@ -21,17 +21,19 @@ const SingleService = () => {
 
 	return (
 		<Container>
+			<h1>{id}</h1>
 			<Row>
-				<Col md={4}>
+				<Col md={6}>
 					<Card>
 						<Card.Img variant="top" src={singleService?.img} />
 					</Card>
 				</Col>
-				<Col md={5}>
+				<Col md={6}>
 					<Card style={{ width: '18rem' }}>
 						<Card.Body>
 							<Card.Title>{singleService?.name}</Card.Title>
-							<Card.Text>{singleService?.description}</Card.Text>
+							<h4>Cost: ${singleService?.price}</h4>
+							<p>{singleService?.description}</p>
 						</Card.Body>
 					</Card>
 				</Col>

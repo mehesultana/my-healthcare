@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 import './Service.css';
 
 const Service = ({ service }) => {
-	const { id, name, price, description, img } = service;
+	const { id, name, description, img } = service;
 
 	const history = useHistory();
 
@@ -20,9 +20,9 @@ const Service = ({ service }) => {
 					<Card.Img variant="top" src={img} />
 					<Card.Body>
 						<Card.Title>{name}</Card.Title>
-						<h2 className="text-center">${price}</h2>
+
 						<Card.Text>{description}</Card.Text>
-						<Link to={`/singleservice/${service?.id}`}>
+						<Link to={`/service/${service?.id}`}>
 							<button onClick={handleDetailsClick} className="btn btn-secondary">
 								Book An Appointment
 							</button>

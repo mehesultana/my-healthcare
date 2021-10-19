@@ -1,14 +1,13 @@
 import React from 'react';
 import { Button, Card, Col, Container, Row } from 'react-bootstrap';
 import { FcSearch, FcNightPortrait } from 'react-icons/fc';
-import { Link } from 'react-router-dom';
 import './Banner.css';
 
 const Banner = () => {
 	return (
 		<Container>
 			<div className="banner-image">
-				<h1 className="text-center">Welcome to My Home Care</h1>
+				<h1 className="text-center">Welcome to My Health Care</h1>
 				<h1 className="text-center">Our Commitment to Safe Care</h1>
 
 				<Row>

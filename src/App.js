@@ -40,7 +40,7 @@ function App() {
 						<PrivateRoute path="/services">
 							<Services />
 						</PrivateRoute>
-						<PrivateRoute path="/singleservice/:id">
+						<PrivateRoute path="/service/:id">
 							<SingleService />
 						</PrivateRoute>
 						<Route path="*">
