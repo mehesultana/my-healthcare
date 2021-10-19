@@ -4,12 +4,12 @@
 
 ## Project Core Points
 
-### 1.
+### 1. My Health Care is a Health care relate website.
 
-### 2.
+### 2. Here You can find your health care solution.
 
-### 3.
+### 3. You can contact our doctors on video chat.
 
-### 4.
+### 4. You can book services on our website.
 
-### 5.
+### 5. My Health Care always active for you.
