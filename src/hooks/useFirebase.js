@@ -1,4 +1,4 @@
-import { getAuth, signInWithPopup, GoogleAuthProvider, signOut, onAuthStateChanged, createUserWithEmailAndPassword, signInWithEmailAndPassword, sendEmailVerification, sendPasswordResetEmail, updateProfile } from 'firebase/auth';
+import { getAuth, signInWithPopup, GoogleAuthProvider, signOut, onAuthStateChanged, createUserWithEmailAndPassword, signInWithEmailAndPassword, sendEmailVerification, sendPasswordResetEmail, updateProfile, FacebookAuthProvider, TwitterAuthProvider } from 'firebase/auth';
 import { useEffect, useState } from 'react';
 import initializeAuthentication from '../pages/Login/Firebase/firebase.init';
 
@@ -12,11 +12,25 @@ const useFirebase = () => {
 	const [error, setError] = useState('');
 	const [isLogin, setIsLogin] = useState(false);
 
+	const googleProvider = new GoogleAuthProvider();
+	const facebookProvider = new FacebookAuthProvider();
+	const twitterProvider = new TwitterAuthProvider();
+
 	const auth = getAuth();
 
 	const signInUsingGoogle = () => {
-		const googleProvider = new GoogleAuthProvider();
 		signInWithPopup(auth, googleProvider).then((result) => {
+			setUser(result.user);
+		});
+	};
+
+	const handleFacebookSignIn = () => {
+		signInWithPopup(auth, facebookProvider).then((result) => {
+			setUser(result.user);
+		});
+	};
+	const handleTwitterSignIn = () => {
+		signInWithPopup(auth, twitterProvider).then((result) => {
 			setUser(result.user);
 		});
 	};
@@ -116,6 +130,8 @@ const useFirebase = () => {
 	return {
 		user,
 		signInUsingGoogle,
+		handleFacebookSignIn,
+		handleTwitterSignIn,
 		logOut,
 		handleRegistration,
 		handleResetPassword,

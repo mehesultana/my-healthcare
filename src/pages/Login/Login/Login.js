@@ -4,10 +4,11 @@ import { Link } from 'react-router-dom';
 import useAuth from '../../../hooks/useAuth';
 import { FcGoogle } from 'react-icons/fc';
 import { FaFacebookF } from 'react-icons/fa';
+import { ImTwitter } from 'react-icons/im';
 import './Login.css';
 
 const Login = () => {
-	const { signInUsingGoogle } = useAuth();
+	const { signInUsingGoogle, handleFacebookSignIn, handleTwitterSignIn } = useAuth();
 
 	return (
 		<Container className="login-form background-image">
@@ -31,9 +32,15 @@ const Login = () => {
 				<br />
 				<br />
 
-				<Button className="btn btn-info">
+				<Button onClick={handleFacebookSignIn} className="btn btn-primary">
 					<FaFacebookF className="w-6 h-6" />
 					Sign In With Facebook
+				</Button>
+				<br />
+				<br />
+				<Button onClick={handleTwitterSignIn} className="btn btn-info">
+					<ImTwitter className="w-6 h-6" />
+					Sign In With Twitter
 				</Button>
 			</div>
 		</Container>
