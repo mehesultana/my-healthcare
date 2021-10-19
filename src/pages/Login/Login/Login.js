@@ -17,10 +17,13 @@ const Login = () => {
 				<form>
 					<input type="email" name="" id="" placeholder="Your Email" />
 					<br />
-					<input type="password" name="" id="" />
+					<br />
+					<input type="password" name="" id="" placeholder="Your Password" />
+					<br />
 					<br />
 					<input type="submit" value="Submit" />
 				</form>
+				<br />
 				<p>
 					new to ? <Link to="/signup">Create Account</Link>
 				</p>
