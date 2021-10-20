@@ -17,7 +17,7 @@ const Service = ({ service }) => {
 		<Container className="service-container">
 			<Col>
 				<Card className="service text-center">
-					<Card.Img variant="top" src={img} />
+					<Card.Img variant="top" src={img} className="card-img" />
 					<Card.Body>
 						<Card.Title>{name}</Card.Title>
 

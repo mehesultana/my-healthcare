@@ -11,7 +11,7 @@ const Blog = ({ blog }) => {
 		<Container className="blog-container">
 			<Col>
 				<Card className="blog">
-					<Card.Img variant="top" src={img} />
+					<Card.Img variant="top" src={img} className="blog-img" />
 					<Card.Body>
 						<Card.Title>{name}</Card.Title>
 						<p>{date}</p>
