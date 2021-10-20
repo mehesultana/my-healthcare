@@ -32,7 +32,7 @@ const SingleService = () => {
 					</Card>
 				</Col>
 				<Col md={6}>
-					<Card style={{ width: '18rem' }}>
+					<Card>
 						<Card.Body>
 							<Card.Title>{singleService?.name}</Card.Title>
 							<h4>Cost: ${singleService?.price}</h4>

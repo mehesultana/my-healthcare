@@ -19,7 +19,7 @@ const Blogs = () => {
 				<p>At My Healthcare, our goal is help you make daily choices that improve your life. Hear from our amazing patients, meet our providers and experts, get wellness and prevention tips, and learn about health topics relevant to northern Michigan.</p>
 			</div>
 			<div className="blog-part">
-				<Row xs={2} md={3} className="g-4 ">
+				<Row xs={1} md={3} className="g-4 ">
 					{blogs.map((blog) => (
 						<Blog key={blog.id} blog={blog}></Blog>
 					))}

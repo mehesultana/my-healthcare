@@ -1,6 +1,6 @@
 import logo from '../../../images/logo.png';
 import React from 'react';
-import { Button, Container, Nav, Navbar } from 'react-bootstrap';
+import { Button, Nav, Navbar } from 'react-bootstrap';
 import { HiOutlineBell } from 'react-icons/hi';
 import { Link } from 'react-router-dom';
 import './Header.css';
@@ -12,7 +12,7 @@ const Header = () => {
 	const { user, logOut } = useAuth();
 
 	return (
-		<Container className="header">
+		<div className="header">
 			<Navbar sticky="top" collapseOnSelect expand="lg">
 				<Link to="/home">
 					<img to="/home" className="logo" src={logo} alt="" />
@@ -38,9 +38,11 @@ const Header = () => {
 
 					{user?.email && (
 						<Navbar.Text>
-							Signed in as: <a href="#login">{user.displayName}</a>
+							<a href="#login">{user.displayName}</a>
 						</Navbar.Text>
 					)}
+					<br />
+					<br />
 					{user?.email ? (
 						<Button className="btn btn-warning" onClick={logOut}>
 							Log Out
@@ -58,7 +60,7 @@ const Header = () => {
 					)}
 				</Navbar.Collapse>
 			</Navbar>
-		</Container>
+		</div>
 	);
 };
 

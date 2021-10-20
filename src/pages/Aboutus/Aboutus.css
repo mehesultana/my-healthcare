@@ -4,3 +4,8 @@ h1 {
 h3 {
 	color: rgb(43, 184, 172);
 }
+
+.about {
+	margin-top: 60px;
+	margin-bottom: 60px;
+}
