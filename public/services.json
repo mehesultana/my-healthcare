@@ -3,7 +3,7 @@
 		"id": 1,
 		"name": "Heart Care",
 		"price": "300",
-		"description": "My Health Care is where skill and modern technology meet to save and improve lives of both the young and old. From life saving ",
+		"description": "My Health Care is where skill and modern technology meet to save and improve lives of both the young and old.",
 		"img": "https://i.ibb.co/cvrzWqW/Heart.jpg"
 	},
 	{
@@ -17,7 +17,7 @@
 		"id": 3,
 		"name": "Eye Care",
 		"price": "150",
-		"description": "Eat a healthy, balanced diet. Your diet should include plenty or fruits and vegetables, especially deep yellow and green leafy ...",
+		"description": "Eat a healthy, balanced diet. Your diet should include plenty or fruits and vegetables,",
 		"img": "https://i.ibb.co/q7qgNHS/eye-centre.jpg"
 	},
 	{
