@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Card, Col, Container, Row } from 'react-bootstrap';
+import { Button, Card, Col, Container, Row } from 'react-bootstrap';
 import { useParams } from 'react-router';
 
 const SingleService = () => {
@@ -9,24 +9,28 @@ const SingleService = () => {
 	const [singleService, setSingleService] = useState({});
 
 	useEffect(() => {
-		fetch('/serviceDetail.json')
+		fetch(`/serviceDetail.json`)
 			.then((res) => res.json())
-			.then((data) => setServiceDetail(data.service));
-		// .then((data) => console.log(data.service));
+			.then((data) => {
+				console.log(data.detail);
+				setServiceDetail(data.detail);
+			});
 	}, [id]);
 
 	useEffect(() => {
-		const foundService = serviceDetail.find((service) => service.id === id);
+		const foundService = serviceDetail?.find((service) => service.id == id);
 		setSingleService(foundService);
+		console.log('foundService', foundService);
 	}, [serviceDetail]);
+
+	const { img } = serviceDetail;
 
 	return (
 		<Container>
-			<h1>{id}</h1>
 			<Row>
 				<Col md={6}>
 					<Card>
-						<Card.Img variant="top" src={serviceDetail?.img} />
+						<Card.Img variant="top" src={img} />
 					</Card>
 				</Col>
 				<Col md={6}>
@@ -35,7 +39,9 @@ const SingleService = () => {
 							<Card.Title>{singleService?.name}</Card.Title>
 							<h4>Cost: ${singleService?.price}</h4>
 							<p>{singleService?.description}</p>
+							<h5>Contact Number: {singleService?.number}</h5>
 						</Card.Body>
+						<Button className=" btn-info">Book An Appointment</Button>
 					</Card>
 				</Col>
 			</Row>

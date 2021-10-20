@@ -22,9 +22,9 @@ const Service = ({ service }) => {
 						<Card.Title>{name}</Card.Title>
 
 						<Card.Text>{description}</Card.Text>
-						<Link to={`/service/${service?.id}`}>
+						<Link to={`/singleservice/${service?.id}`}>
 							<button onClick={handleDetailsClick} className="btn btn-secondary">
-								Book An Appointment
+								More Details
 							</button>
 						</Link>
 					</Card.Body>
