@@ -23,14 +23,12 @@ const SingleService = () => {
 		console.log('foundService', foundService);
 	}, [serviceDetail]);
 
-	const { img } = serviceDetail;
-
 	return (
-		<Container>
+		<Container className="mt-5 mb-5">
 			<Row>
 				<Col md={6}>
 					<Card>
-						<Card.Img variant="top" src={img} />
+						<Card.Img variant="top" src={singleService?.img} />
 					</Card>
 				</Col>
 				<Col md={6}>
